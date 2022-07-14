@@ -1,22 +1,19 @@
 public class Main {
-     //Задача 1
-    //Объявите переменную clientOS, которая равна 0 или 1. Где 0 — iOS, 1 — Android.
-    //При отработке программы в консоли должно выдаваться сообщение об установке соответствующего приложения.
-    //Например, для iOS оно будет звучать так:
-    //«Установите версию приложения для iOS по ссылке».
-    //А для Android так:
-    //«Установите версию приложения для Android по ссылке».
+     //Задача 2
 
     public static void main(String[] args) {
-        task1();
+        task2();
     }
 
-    private static void task1() {
-    int clientOS = 0;
-        if (clientOS==0){
-            System.out.println("Установите версию приложения для iOS по ссылке");
+    private static void task2() {
+    int clientDeviceYear = 2014;
+    int clientOS =0;
+        if (clientDeviceYear<2015 && clientOS==1){
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        } else if (clientDeviceYear<2015 && clientOS==0){
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         } else {
-            System.out.println("Установите версию приложения для Android по ссылке");
+            System.out.println("Продолжить установку");
         }
     }
 }
