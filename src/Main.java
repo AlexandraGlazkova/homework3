@@ -1,27 +1,20 @@
 public class Main {
-    //Задача 3
-    //Напишите программу, которая определяет, является ли год високосным или нет.
-    // Переменную года назовите year, в которую можно подставить значение интересующего нас года.
-    // Например, 2021.
-    // Программа должна определять, високосный год или нет, и выводить соответствующее сообщение:
-    // « …. год является високосным».
-    // или
-    // «... год не является високосным».
-    // Небольшая справка: високосным является каждый четвертый год, но не является каждый сотый.
-    // Также високосным является каждый четырехсотый год
+    //Задача 4
 
-    public static void main(String[] args) { task3(); }
 
-    private static void task3() {
-        int year = 2020;
-        if (year % 400 == 0 && year % 100 == 0 && year % 4 == 0) {
-            System.out.println(year + " год не является високосным");
-        } else
-        if (year % 4 == 0 && year%100!=0 ) {
-            System.out.println(year + " год является високосным");
-        } else
-        {
-            System.out.println(year + " год не является високосным");}
+    public static void main(String[] args) { task4(); }
+
+    private static void task4() {
+        int deliveryDistanse = 95;
+        if (deliveryDistanse <= 20) {
+            System.out.println("Потребуется дней " + 1);
+                if (deliveryDistanse >= 20 && deliveryDistanse <= 60);
+            {
+                System.out.println("Потребуется дней " + 2);
+            }
+            }else if (deliveryDistanse>=60 && deliveryDistanse<=100);{
+                System.out.println("Потребуется дней "+3);}
+
 
     }
 }
